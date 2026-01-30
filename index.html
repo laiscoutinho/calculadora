@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Multiuso</title>
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Folha de estilo -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Importar icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Importar fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="container">
+        <nav>
+            <div class="tiposCalculo" id="historico">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Histórico</span>
+            </div>
+            <div class="tiposCalculo" id="basica">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Básica</span>
+            </div>
+            <div class="tiposCalculo" id="cientifica">
+                <i class="fa-solid fa-binoculars"></i>
+                <span>Científica</span>
+            </div>
+            <div class="tiposCalculo" id="financeira">
+                <i class="fa-solid fa-coins"></i>
+                <span>Financeira</span>
+            </div>
+            <div class="tiposCalculo" id="imc">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>IMC</span>
+            </div>
+        </nav>
+        <main>
+            <div id="calculadora">
+                <div id="display">
+                    <span id="operacao"></span>
+                    <span id="resultado">0</span>
+                    <i class="fa-solid fa-delete-left"></i>
+                </div>
+                <div class="botoes">
+                        <div class="btn">1</div>
+                        <div class="btn">2</div>
+                        <div class="btn">3</div>
+
+                        <div class="btn">+</div>
+
+                        <div class="btn">4</div>
+                        <div class="btn">5</div>
+                        <div class="btn">6</div>
+
+                        <div class="btn">-</div>
+
+                        <div class="btn">7</div>
+                        <div class="btn">8</div>
+                        <div class="btn">9</div>
+
+                        <div class="btn">x</div>
+
+                        <div class="btn">.</div>
+                        <div class="btn">0</div>
+                        <div class="btn">%</div>
+                        <div class="btn">÷</div>
+
+                        <div class="btn" id="igual">=</div>
+                </div>
+            </div>
+
+            <div id="funcoes-extras">
+                <p id="msg-basica">Selecione outro tipo de calculadora para exibir mais opções</p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>
+            Desenvolvido por 
+            <a href="https://github.com/laiscoutinho">Laís Coutinho</a>. 
+            Todos os direitos reservados. 
+            <span id="anoAtual"></span> 
+        </p>
+    </footer>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
